@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.scss";
 import SiteFooter from "@/layouts/siteFooter";
 import SiteNavbar from "@/layouts/siteNav";
 import { Hero } from "@/layouts/hero";
+import { Section } from "@/layouts/section";
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
         height={"h-[33rem]"}
         logoWidth={"w-10/12"}
       />
+      <Section cols={1}>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+      </Section>
       <div className={styles.container}>
         <main>
           <h1 className={styles.title}>

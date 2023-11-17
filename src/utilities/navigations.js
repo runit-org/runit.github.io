@@ -1,19 +1,5 @@
 export const NavigationObj = () => {
   const headerItems = [
-    /*    {
-      name: "Creative Tools",
-      subNav: [
-        {
-          name: "Social Image Creator ",
-          href: `/${IMAGE_GENERATOR}/Analysis-Articles`,
-        },
-        { name: "Email Image Creator ", href: `/${EMAIL_IMAGE_GENERATOR}` },
-        {
-          name: "Youtube Thumbnail Creator ",
-          href: `/${YT_THUMBNAIL_CREATOR}`,
-        },
-      ],
-    }, */
     {
       name: "Home",
       href: "#",
@@ -24,6 +10,20 @@ export const NavigationObj = () => {
     },
     {
       name: "Services",
+      subNav: [
+        {
+          name: "Sub 1",
+          href: "#",
+        },
+        {
+          name: "Sub 2",
+          href: "#",
+        },
+        {
+          name: "Sub 3",
+          href: "#",
+        },
+      ],
       href: "#",
     },
 
@@ -42,24 +42,24 @@ export const FooterItems = () => {
       title: "SITE MAP",
       contents: [
         {
-          name: "Flowbite",
+          name: "runit",
           href: `#`,
         },
         {
-          name: "Tailwind CSS",
+          name: "runit.github.io",
           href: `#`,
         },
       ],
     },
     {
-      title: "MORE RESOURCES",
+      title: "More Resocures",
       contents: [
         {
-          name: "Github",
-          href: "#",
+          name: "Privacy Policy",
+          href: `#`,
         },
         {
-          name: "Discord",
+          name: "Terms & Conditions",
           href: `#`,
         },
       ],
@@ -68,11 +68,11 @@ export const FooterItems = () => {
       title: "Contact Us",
       contents: [
         {
-          name: "Privacy Policy",
-          href: `#`,
+          name: "Github",
+          href: "#",
         },
         {
-          name: "Terms & Conditions",
+          name: "Email",
           href: `#`,
         },
       ],

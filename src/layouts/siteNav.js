@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Navbar } from "flowbite-react";
+import { Dropdown, Navbar } from "flowbite-react";
 import { NavigationObj } from "@/utilities/navigations";
 
 export default function SiteNavbar() {
@@ -24,7 +24,7 @@ export default function SiteNavbar() {
                             navigate(sub.href);
                           }}
                         >
-                          {sub.name} <MenuArrow />
+                          {sub.name} {/* <MenuArrow /> */}
                         </Dropdown.Item>
                       );
                     })}

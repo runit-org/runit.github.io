@@ -76,7 +76,3 @@ footer footer h2 {
   color: $primary-dark !important;
   font-weight: 700 !important;
 }
-
-footer footer .grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-}

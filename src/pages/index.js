@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
 import SiteFooter from "@/layouts/siteFooter";
 import SiteNavbar from "@/layouts/siteNav";
+import { Hero } from "@/layouts/hero";
 
 export default function Home() {
   return (
@@ -12,6 +13,18 @@ export default function Home() {
       </Head>
 
       <SiteNavbar />
+      <Hero
+        title={"Plan and Organize events with runIt!"}
+        desc={
+          <>
+            With runIt, we aim to build the most user friendly event match
+            making interface while providing users with myriads of social-media
+            like functionalities.
+          </>
+        }
+        height={"h-[33rem]"}
+        logoWidth={"w-10/12"}
+      />
       <div className={styles.container}>
         <main>
           <h1 className={styles.title}>

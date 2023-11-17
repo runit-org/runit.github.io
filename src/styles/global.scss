@@ -32,6 +32,21 @@ main {
   justify-content: center;
   align-items: center;
 }
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+.App-hero {
+  display: flex;
+  background-color: $theme-light;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: $size-lg;
+  color: $primary-dark;
+}
 
 code {
   background: #fafafa;

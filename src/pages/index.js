@@ -27,25 +27,25 @@ export default function Home() {
         logoWidth={"w-10/12"}
       />
       <Section cols={1}>
-        <h1 className={styles.title}>Section one</h1>
+        <h1>Feature one</h1>
       </Section>
       <Section cols={2}>
         <div>
-          <h1 className={styles.title}>Section Two </h1>
+          <h1>Feature two </h1>
         </div>
         <div>
-          <h1 className={styles.title}>Col Two</h1>
+          <h1>Col Two</h1>
         </div>
       </Section>
       <Section cols={3}>
         <div>
-          <h1 className={styles.title}>Section Two </h1>
+          <h1>Feature Three </h1>
         </div>
         <div>
-          <h1 className={styles.title}>Col</h1>
+          <h1>Col</h1>
         </div>
         <div>
-          <h1 className={styles.title}>Three</h1>
+          <h1>Three</h1>
         </div>
       </Section>
       <div className={styles.container}>

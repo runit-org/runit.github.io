@@ -5,7 +5,7 @@ export const Section = ({ children, cols }) => {
         <div
           className={`grid ${
             cols === 2 ? "lg:grid-cols-2" : cols === 3 ? "lg:grid-cols-3" : ""
-          } sm:gap-x-32 text-start items-center`}
+          } sm:gap-x-32 items-center text-center`}
         >
           {children}
         </div>

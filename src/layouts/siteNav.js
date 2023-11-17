@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Dropdown, Navbar } from "flowbite-react";
 import { NavigationObj } from "@/utilities/navigations";
+import { useRouter } from "next/router";
 
 export default function SiteNavbar() {
+  let route = useRouter();
   return (
     <div className="w-full container mx-auto">
       <Navbar fluid rounded>
@@ -21,10 +23,10 @@ export default function SiteNavbar() {
                         <Dropdown.Item
                           key={i}
                           onClick={() => {
-                            navigate(sub.href);
+                            route.push(sub.href);
                           }}
                         >
-                          {sub.name} {/* <MenuArrow /> */}
+                          {sub.name}
                         </Dropdown.Item>
                       );
                     })}

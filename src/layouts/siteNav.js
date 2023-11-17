@@ -6,12 +6,8 @@ export default function SiteNavbar() {
   return (
     <div className="w-full container mx-auto">
       <Navbar fluid rounded>
-        <Navbar.Brand as={Link} href="https://flowbite-react.com">
-          <img
-            src="/favicon.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="runit Logo"
-          />
+        <Navbar.Brand as={Link} href="/">
+          <img src="/runit.png" className="mr-3 h-6 sm:h-9" alt="runit Logo" />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

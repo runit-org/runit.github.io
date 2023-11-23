@@ -24,6 +24,15 @@ a:hover {
   box-sizing: border-box;
 }
 
+h1 {
+  @extend %title;
+  @include font(1.875rem !important, 600, 2.25rem, -0.025rem);
+}
+h2 {
+  @extend %title;
+  @include font(1.875rem, 600, 2.25rem, -0.025rem);
+}
+
 img {
   max-width: 100%;
   height: auto;

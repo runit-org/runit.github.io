@@ -16,3 +16,16 @@ $size-md: 0.875rem;
 $size-lg: 1.2rem;
 $font-header: "Poppins", "Roboto", "sans-serif", Arial, Helvetica;
 $font-body: "Roboto", sans-serif, Arial, Helvetica;
+
+/*------Mixins------*/
+@mixin font($fntSize, $fntW, $lineH, $letterSpacing) {
+  font-size: $fntSize;
+  font-weight: $fntW !important;
+  line-height: $lineH !important;
+  letter-spacing: $letterSpacing !important;
+}
+/*------Placeholder------*/
+%title {
+  display: block;
+  margin-bottom: 1rem;
+}

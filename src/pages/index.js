@@ -166,7 +166,7 @@ export default function Home() {
           <Section cols={2}>
             <div className="text-start">
               <h2 className="sm:text-5xl">
-                About <span className="text-primary">Us</span>
+                The <span className="text-primary">Devs</span>
               </h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting

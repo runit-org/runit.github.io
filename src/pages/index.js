@@ -8,29 +8,69 @@ import { People } from "@/utilities/people";
 import { useKeenSlider } from "keen-slider/react";
 
 export default function Home() {
-  const [sliderRef, instanceRef] = useKeenSlider(
-    {
-      loop: true,
-      slides: {
-        origin: "center",
-        perView: 1.25,
-        spacing: 16,
-      },
-      breakpoints: {
-        "(min-width: 1024px)": {
-          slides: {
-            origin: "auto",
-            perView: 1.5,
-            spacing: 32,
-          },
+  const animation = { duration: 5000, easing: (t) => t };
+
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    slides: {
+      origin: "center",
+    },
+    breakpoints: {
+      "(min-width: 1024px)": {
+        slides: {
+          origin: "auto",
+          perView: 1.5,
+          spacing: 32,
         },
       },
     },
-    {
-      slideChanged() {
-        console.log("slide changed");
-      },
-    }
+  });
+
+  const sliderControls = (
+    <>
+      <button
+        aria-label="Previous slide"
+        id="keen-slider-previous-desktop"
+        onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
+        className="rounded-full border border-primary p-1 text-primary transition hover:bg-primary hover:text-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="h-5 w-5 rtl:rotate-180"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next slide"
+        id="keen-slider-next-desktop"
+        onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
+        className="rounded-full border border-primary p-1 text-primary transition hover:bg-primary hover:text-white"
+      >
+        <svg
+          className="h-5 w-5 rtl:rotate-180"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 5l7 7-7 7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+          />
+        </svg>
+      </button>
+    </>
   );
   return (
     <div>
@@ -134,6 +174,10 @@ export default function Home() {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
+
+              <div className="md:flex py-2 lg:py-4 gap-4 hidden">
+                {sliderControls}
+              </div>
             </div>
             <div ref={sliderRef} className="keen-slider">
               {People().map((item, index) => {
@@ -152,6 +196,9 @@ export default function Home() {
                   </div>
                 );
               })}
+            </div>
+            <div className="flex py-6 lg:py-4 gap-4 md:hidden justify-center">
+              {sliderControls}
             </div>
           </Section>
         </div>

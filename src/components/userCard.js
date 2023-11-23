@@ -8,7 +8,7 @@ export const UserCard = ({
   lowerContent,
 }) => {
   return (
-    <span className={`${styles.card} sm:p-6 lg:p-4`}>
+    <span className={`${styles.card} p-6 lg:p-4`}>
       <div className="sm:flex sm:justify-start sm:gap-4">
         <div className="hidden sm:block sm:shrink-0">{img}</div>
         <div>

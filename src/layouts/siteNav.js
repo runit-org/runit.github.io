@@ -6,8 +6,8 @@ import { useRouter } from "next/router";
 export default function SiteNavbar() {
   let route = useRouter();
   return (
-    <div className="w-full container mx-auto">
-      <Navbar fluid rounded>
+    <div className="w-full flex justify-center md:sticky top-0 z-50 max-w-full bg-white">
+      <Navbar fluid rounded className="container">
         <Navbar.Brand as={Link} href="/">
           <img src="/runit.png" className="mr-3 h-6 sm:h-9" alt="runit Logo" />
         </Navbar.Brand>

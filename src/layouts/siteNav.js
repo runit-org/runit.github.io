@@ -40,7 +40,7 @@ export default function SiteNavbar() {
           })}
           <Button
             className="btn-primary"
-            onClick={() => route.push("http://170.64.220.126:3000")}
+            onClick={() => route.push("http://170.64.220.126:3000/signup")}
           >
             Sign up
           </Button>

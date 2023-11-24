@@ -21,3 +21,22 @@
 .logo {
   height: 1em;
 }
+
+.sidebar {
+  width: 100%;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12%;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+.content_container {
+  padding: 0 2rem;
+  height: 100%;
+}

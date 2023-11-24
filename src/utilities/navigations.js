@@ -85,3 +85,25 @@ export const FooterItems = () => {
 
   return footerItems;
 };
+
+export const SidebarNavs = () => {
+  const sidebarNavs = [
+    {
+      name: "events",
+      title: "Events",
+      icons: <span className="font-semibold text-gray-500">AU</span>,
+    },
+    {
+      name: "accounts",
+      title: "Accounts",
+      icons: <span className="font-semibold text-gray-500">AU</span>,
+    },
+    {
+      name: "security",
+      title: "Security",
+      icons: <span className="font-semibold text-gray-500">AU</span>,
+    },
+  ];
+
+  return sidebarNavs;
+};

@@ -91,7 +91,7 @@ export default function Home() {
         height={"h-[33rem]"}
         logoWidth={"w-10/12"}
       />
-      <Section cols={2}>
+      <Section cols={2} id="about">
         <div className="order-last text-start">
           <h2 className="sm:text-5xl">Events</h2>
           <p>
@@ -161,7 +161,11 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section cols={1} customStyle={"bg-themeLight p-10 rounded-xl"}>
+      <Section
+        cols={1}
+        customStyle={"bg-themeLight p-10 rounded-xl"}
+        id="people"
+      >
         <div className="w-full">
           <Section cols={2}>
             <div className="text-start">

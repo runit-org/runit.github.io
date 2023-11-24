@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Dropdown, Navbar } from "flowbite-react";
+import { Button, Dropdown, Navbar } from "flowbite-react";
 import { NavigationObj } from "@/utilities/navigations";
 import { useRouter } from "next/router";
 
 export default function SiteNavbar() {
   let route = useRouter();
+
   return (
     <div className="w-full flex justify-center md:sticky top-0 z-50 max-w-full bg-white">
       <Navbar fluid rounded className="container">
@@ -37,6 +38,12 @@ export default function SiteNavbar() {
               </Navbar.Link>
             );
           })}
+          <Button
+            className="btn-primary"
+            onClick={() => route.push("http://170.64.220.126:3000")}
+          >
+            Sign up
+          </Button>
         </Navbar.Collapse>
       </Navbar>
     </div>

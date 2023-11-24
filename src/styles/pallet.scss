@@ -24,6 +24,12 @@ $font-body: "Roboto", sans-serif, Arial, Helvetica;
   line-height: $lineH !important;
   letter-spacing: $letterSpacing !important;
 }
+@mixin btn-style($bgColor, $color, $border, $fw) {
+  background-color: $bgColor !important;
+  color: $color !important;
+  border: $border !important;
+  font-weight: $fw !important;
+}
 /*------Placeholder------*/
 %title {
   display: block;

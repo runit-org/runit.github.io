@@ -6,9 +6,13 @@ export const NavigationObj = () => {
     },
     {
       name: "About",
-      href: "#",
+      href: "#about",
     },
     {
+      name: "People",
+      href: "#people",
+    },
+    /*   {
       name: "Services",
       subNav: [
         {
@@ -26,7 +30,7 @@ export const NavigationObj = () => {
       ],
       href: "#",
     },
-
+ */
     {
       name: "Contact",
       href: "#",

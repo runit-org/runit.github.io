@@ -8,7 +8,7 @@ export const People = () => {
       img: (
         <UserImg
           alt="JT"
-          url="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+          url="https://www.gravatar.com/avatar/20e5d0492e809825a933ce13a8d60ae9280426a7eb27e28f9df7df3854835fc6?d=retro"
         />
       ),
       description:
@@ -30,7 +30,7 @@ export const People = () => {
       img: (
         <UserImg
           alt="ML"
-          url="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+          url="https://www.gravatar.com/avatar/cb4203acd8d92059e616586de833527957174c9850d98260242492026188cc80?d=retro"
         />
       ),
       description:

@@ -29,9 +29,11 @@ export const UserCard = ({
           return (
             <div key={index} className="flex flex-col">
               <dt className="text-sm font-medium text-gray-600">
-                {item.title}
+                <a href={item.link} target="_blank">
+                  {item.title}
+                </a>
               </dt>
-              <dd className="text-xs text-gray-500">{item.content}</dd>
+              {/* <dd className="text-xs text-gray-500">{item.content}</dd> */}
             </div>
           );
         })}

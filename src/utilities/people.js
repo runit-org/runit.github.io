@@ -15,12 +15,14 @@ export const People = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque. amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.",
       lowerContent: [
         {
-          title: "Published",
-          content: "31st June, 2021",
+          title: "LinkedIn",
+          link: "https://www.linkedin.com/in/juliantj/",
+          // content: "31st June, 2021",
         },
         {
-          title: " Reading time",
-          content: "3 minute",
+          title: "Github",
+          link: "https://github.com/juliantjg",
+          // content: "3 minute",
         },
       ],
     },
@@ -37,12 +39,14 @@ export const People = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque. amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.",
       lowerContent: [
         {
-          title: "Published",
-          content: "31st June, 2021",
+          title: "LinkedIn",
+          link: "https://www.linkedin.com/in/mananlodhia/",
+          // content: "31st June, 2021",
         },
         {
-          title: " Reading time",
-          content: "3 minute",
+          title: "Github",
+          link: "https://github.com/mananlodhia1",
+          // content: "3 minute",
         },
       ],
     },

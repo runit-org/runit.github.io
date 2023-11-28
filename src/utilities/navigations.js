@@ -2,7 +2,7 @@ export const NavigationObj = () => {
   const headerItems = [
     {
       name: "Home",
-      href: "#",
+      href: "/",
     },
     {
       name: "About",
@@ -51,7 +51,7 @@ export const FooterItems = () => {
         },
         {
           name: "runit.github.io",
-          href: `#`,
+          href: `/`,
         },
       ],
     },

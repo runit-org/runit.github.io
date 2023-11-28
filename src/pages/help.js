@@ -2,7 +2,7 @@ import Head from "next/head";
 import SiteFooter from "@/layouts/siteFooter";
 import SiteNavbar from "@/layouts/siteNav";
 import style from "@/styles/Home.module.scss";
-import SideNav from "@/layouts/sidenav";
+import SideNav from "@/layouts/sideNav";
 import { useRouter } from "next/router";
 
 export default function Help() {

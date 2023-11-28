@@ -8,8 +8,6 @@ import { People } from "@/utilities/people";
 import { useKeenSlider } from "keen-slider/react";
 
 export default function Home() {
-  const animation = { duration: 5000, easing: (t) => t };
-
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     slides: {
@@ -32,7 +30,7 @@ export default function Home() {
         aria-label="Previous slide"
         id="keen-slider-previous-desktop"
         onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
-        className="rounded-full border border-primary p-1 text-primary transition hover:bg-primary hover:text-white"
+        className="rounded-xl border border-primary p-1 text-primary transition hover:bg-primary hover:text-white"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +51,7 @@ export default function Home() {
         aria-label="Next slide"
         id="keen-slider-next-desktop"
         onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
-        className="rounded-full border border-primary p-1 text-primary transition hover:bg-primary hover:text-white"
+        className="rounded-xl border border-primary p-1 text-primary transition hover:bg-primary hover:text-white"
       >
         <svg
           className="h-5 w-5 rtl:rotate-180"

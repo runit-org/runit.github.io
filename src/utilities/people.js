@@ -12,7 +12,7 @@ export const People = () => {
         />
       ),
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque. amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.",
+        "Meet Julian Tjiong, our accomplished backend-fullstack developer. With expertise in various programming languages and frameworks, Julian played a pivotal role in shaping runit. On runit, he worked with Python-Django and MySQL for robust RESTful API development, utilizing additional dependencies such as Selenium, Celery, etc for a seamless backend experience. Julian is also responsible for deploying runit, leveraging DigitalOcean cloud architecture for enhanced stability and performance.",
       lowerContent: [
         {
           title: "LinkedIn",
@@ -36,7 +36,7 @@ export const People = () => {
         />
       ),
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque. amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.",
+        "Meet Manan Lodhia, our skilled frontend-fullstack developer. With a rich background in multiple programming languages and frameworks, Manan brings a unique perspective to runit. runit, meticulously crafted and designed by him, utilizes React.js+Redux and various packages for a robust and seamless frontend. Leveraging technologies like Express, Sockets.io, and routers, Manan ensures a dynamic user experience. The frontend is rigorously automated tested using Cypress, ensuring a robust interaction with the backend API and beyond.",
       lowerContent: [
         {
           title: "LinkedIn",

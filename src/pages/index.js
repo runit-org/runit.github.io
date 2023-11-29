@@ -78,10 +78,10 @@ export default function Home() {
       </Head>
       <SiteNavbar />
       <Hero
-        title={"Plan and Organize events with runIt!"}
+        title={"Plan and Organize events with runit!"}
         desc={
           <>
-            With runIt, we aim to build the most user friendly event match
+            With runit, we aim to build the most user friendly event match
             making interface while providing users with myriads of social-media
             like functionalities.
           </>
@@ -92,16 +92,13 @@ export default function Home() {
       <Section cols={2} id="about">
         <div className="order-last text-start">
           <h2 className="sm:text-5xl">Events</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          <p>   
+            Customize your experience by creating events tailored to your preferences. 
+            Choose from real-time happenings or design events to your liking. 
+            Set specific details such as time, participant limits, and effortlessly 
+            manage event status. Need to make adjustments? Easily cancel or modify 
+            events with just a few clicks. Your event, your way—seamless, flexible, 
+            and at your fingertips!   
           </p>
         </div>
         <div>
@@ -116,15 +113,13 @@ export default function Home() {
         <div className="text-start">
           <h2 className="sm:text-5xl">Collaboration</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Dive into the world of shared experiences. 
+            Join other exciting events or open your doors for others to join yours. 
+            Receive instant notifications for join requests, making it easy to accept 
+            applicants and manage your event community. Engage in conversations with comments, 
+            make impactful announcements, and send notifications to keep everyone in the loop. 
+            Collaborate seamlessly, connect effortlessly—because every event is an opportunity 
+            to create lasting moments together!
           </p>
         </div>
         <div>
@@ -139,15 +134,14 @@ export default function Home() {
         <div className="order-last  text-start">
           <h2 className="sm:text-5xl">Security & Profile</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Explore a variety of tabs for a personalized experience. 
+            Review your activity history on your profile or check out others' 
+            public activities. Navigate the calendar tab to view events by 
+            selecting a date, and explore others' calendars. Manage your connections 
+            by viewing users you've given stars to and easily unstar them. 
+            Take control of your security with a dedicated tab to change your password. 
+            Have feedback for us? Use the dedicated tab to send your thoughts directly 
+            to the developers. Your profile, your security—tailored to your preferences.
           </p>
         </div>
         <div>
@@ -171,10 +165,10 @@ export default function Home() {
                 The <span className="text-primary">Devs</span>
               </h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Meet the developers behind runit—each contributing their expertise 
+                to bring you an exceptional experience. Our backend and frontend developers 
+                are passionate about crafting seamless solutions. Have feedback or suggestions? 
+                Feel free to reach out to them. Your input is valuable in shaping the future of runit!
               </p>
 
               <div className="md:flex py-2 lg:py-4 gap-4 hidden">

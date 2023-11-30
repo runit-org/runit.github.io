@@ -5,11 +5,11 @@ import sidebar from "@/styles/Home.module.scss";
 
 export default function SideNav() {
   const router = useRouter();
-  const { help } = router.query;
+  const { slug } = router.query;
   const sidebarNavs = SidebarNavs();
 
   const style =
-    "flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 transition-all";
+    "ml-2 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 transition-all";
 
   return (
     <div className="w-2/12 hidden lg:block border-r border-gray-200 text-start">
@@ -21,18 +21,16 @@ export default function SideNav() {
             {sidebarNavs.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link href="/help/[help]" as={`/help/${item.name}`}>
-                    <a
+                  <Link href="/help/[slug]" as={`/help/${item.name}`}>
+                    <span
                       className={
-                        help === item.name
+                        slug === item.name
                           ? `${style} bg-gray-100 font-semibold text-primary`
                           : style
                       }
                     >
-                      {/* {item.icons} */}
-
-                      <span className="ml-3">{item.title}</span>
-                    </a>
+                      {item.title}
+                    </span>
                   </Link>
                 </li>
               );

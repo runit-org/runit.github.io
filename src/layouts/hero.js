@@ -4,7 +4,7 @@ export const Hero = (props) => {
       <div className="container">
         <div className="max-w-full mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-5 sm:flex sm:items-center sm:justify-between">
           <div className="sm:w-1/2 w-full">
-            <h2 className="block mb-4 text-3xl font-bold tracking-tight text-secondary sm:text-5xl font-display">
+            <h2 className="block mb-4 text-3xl text-secondary sm:text-5xl">
               {props.title}
             </h2>
             <p className="block">{props.desc}</p>

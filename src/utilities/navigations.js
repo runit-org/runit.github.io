@@ -1,36 +1,34 @@
 export const NavigationObj = () => {
   const headerItems = [
-    {
+    /*  {
       name: "Home",
       href: "/",
-    },
+    }, */
     {
       name: "About",
-      href: "#about",
+      href: "/#about",
     },
     {
       name: "People",
-      href: "#people",
+      href: "/#people",
     },
-    /*   {
-      name: "Services",
+    {
+      name: "Help",
       subNav: [
         {
-          name: "Sub 1",
-          href: "#",
+          name: "Event",
+          href: "/help/event",
         },
         {
-          name: "Sub 2",
-          href: "#",
+          name: "Account",
+          href: "/help/account",
         },
         {
-          name: "Sub 3",
-          href: "#",
+          name: "Security",
+          href: "/help/security",
         },
       ],
-      href: "#",
     },
- */
     {
       name: "Contact",
       href: "#",
@@ -89,13 +87,13 @@ export const FooterItems = () => {
 export const SidebarNavs = () => {
   const sidebarNavs = [
     {
-      name: "events",
-      title: "Events",
+      name: "event",
+      title: "Event",
       icons: <span className="font-semibold text-gray-500">AU</span>,
     },
     {
-      name: "accounts",
-      title: "Accounts",
+      name: "account",
+      title: "Account",
       icons: <span className="font-semibold text-gray-500">AU</span>,
     },
     {

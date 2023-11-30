@@ -32,7 +32,7 @@ h1 {
 }
 h2 {
   @extend %title;
-  @include font(1.875rem, 600, 2.25rem, -0.025rem);
+  @include font(1.875rem, 600, 2.5rem, -0.035rem);
 }
 
 img {

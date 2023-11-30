@@ -6,6 +6,10 @@ import { Section } from "@/layouts/section";
 import { UserCard } from "@/components/userCard";
 import { People } from "@/utilities/people";
 import { useKeenSlider } from "keen-slider/react";
+import Image from "next/image";
+import eventGif from "../assets/runit-events.gif";
+import collabGif from "../assets/runit-collaborations.gif";
+import profileGif from "../assets/runit-profile.gif";
 
 export default function Home() {
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -77,6 +81,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SiteNavbar />
+      {/* (modifiable) */}
       <Hero
         title={"Plan and Organize events with runit!"}
         desc={
@@ -89,70 +94,79 @@ export default function Home() {
         height={"h-[33rem]"}
         logoWidth={"w-10/12"}
       />
+      {/* (modifiable) */}
       <Section cols={2} id="about">
         <div className="order-last text-start">
           <h2 className="sm:text-5xl">Events</h2>
-          <p>   
-            Customize your experience by creating events tailored to your preferences. 
-            Choose from real-time happenings or design events to your liking. 
-            Set specific details such as time, participant limits, and effortlessly 
-            manage event status. Need to make adjustments? Easily cancel or modify 
-            events with just a few clicks. Your event, your way—seamless, flexible, 
-            and at your fingertips!   
+          <p>
+            Customize your experience by creating events tailored to your
+            preferences. Choose from real-time happenings or design events to
+            your liking. Set specific details such as time, participant limits,
+            and effortlessly manage event status. Need to make adjustments?
+            Easily cancel or modify events with just a few clicks. Your event,
+            your way—seamless, flexible, and at your fingertips!
           </p>
         </div>
         <div>
-          <img
-            // src="/runit.png"
-            className=""
-            alt="runit Logo"
+          <Image
+            priority={true}
+            src={eventGif}
+            alt="runit events gif"
+            className="rounded-xl drop-shadow-2xl"
           />
         </div>
       </Section>
+      {/* (modifiable) */}
       <Section cols={2}>
         <div className="text-start">
           <h2 className="sm:text-5xl">Collaboration</h2>
           <p>
-            Dive into the world of shared experiences. 
-            Join other exciting events or open your doors for others to join yours. 
-            Receive instant notifications for join requests, making it easy to accept 
-            applicants and manage your event community. Engage in conversations with comments, 
-            make impactful announcements, and send notifications to keep everyone in the loop. 
-            Collaborate seamlessly, connect effortlessly—because every event is an opportunity 
-            to create lasting moments together!
+            Dive into the world of shared experiences. Join other exciting
+            events or open your doors for others to join yours. Receive instant
+            notifications for join requests, making it easy to accept applicants
+            and manage your event community. Engage in conversations with
+            comments, make impactful announcements, and send notifications to
+            keep everyone in the loop. Collaborate seamlessly, connect
+            effortlessly—because every event is an opportunity to create lasting
+            moments together!
           </p>
         </div>
         <div>
-          <img
-            // src="/runit.png"
-            className=""
-            alt="runit Logo"
+          <Image
+            priority={true}
+            src={collabGif}
+            alt="runit collab gif"
+            className="rounded-xl drop-shadow-2xl"
           />
         </div>
       </Section>
+      {/* (modifiable) */}
       <Section cols={2}>
         <div className="order-last  text-start">
           <h2 className="sm:text-5xl">Security & Profile</h2>
           <p>
-            Explore a variety of tabs for a personalized experience. 
-            Review your activity history on your profile or check out others' 
-            public activities. Navigate the calendar tab to view events by 
-            selecting a date, and explore others' calendars. Manage your connections 
-            by viewing users you've given stars to and easily unstar them. 
-            Take control of your security with a dedicated tab to change your password. 
-            Have feedback for us? Use the dedicated tab to send your thoughts directly 
-            to the developers. Your profile, your security—tailored to your preferences.
+            Explore a variety of tabs for a personalized experience. Review your
+            activity history on your profile or check out others' public
+            activities. Navigate the calendar tab to view events by selecting a
+            date, and explore others' calendars. Manage your connections by
+            viewing users you've given stars to and easily unstar them. Take
+            control of your security with a dedicated tab to change your
+            password. Have feedback for us? Use the dedicated tab to send your
+            thoughts directly to the developers. Your profile, your
+            security—tailored to your preferences.
           </p>
         </div>
         <div>
-          <img
-            // src="/runit.png"
-            className=""
-            alt="runit Logo"
+          <Image
+            priority={true}
+            src={profileGif}
+            alt="runit profile gif"
+            className="rounded-xl drop-shadow-2xl"
           />
         </div>
       </Section>
 
+      {/* (modifiable) */}
       <Section
         cols={1}
         customStyle={"bg-themeLight p-10 rounded-xl"}
@@ -165,10 +179,11 @@ export default function Home() {
                 The <span className="text-primary">Devs</span>
               </h2>
               <p>
-                Meet the developers behind runit—each contributing their expertise 
-                to bring you an exceptional experience. Our backend and frontend developers 
-                are passionate about crafting seamless solutions. Have feedback or suggestions? 
-                Feel free to reach out to them. Your input is valuable in shaping the future of runit!
+                Meet the developers behind runit—each contributing their
+                expertise to bring you an exceptional experience. Our backend
+                and frontend developers are passionate about crafting seamless
+                solutions. Have feedback or suggestions? Feel free to reach out
+                to them. Your input is valuable in shaping the future of runit!
               </p>
 
               <div className="md:flex py-2 lg:py-4 gap-4 hidden">

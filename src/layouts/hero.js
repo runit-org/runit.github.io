@@ -11,7 +11,7 @@ export const Hero = (props) => {
           </div>
           <div className="justify-center sm:justify-end mt-8 flex lg:mt-0 sm:w-1/2 w-full lg:flex-shrink-0">
             <img
-              // src="/runit.png"
+              src="/runitLarge.png"
               className={` ${props.logoWidth}`}
               alt="runit Logo"
             />

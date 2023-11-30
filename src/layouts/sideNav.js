@@ -14,7 +14,7 @@ export default function SideNav() {
   return (
     <div className="w-2/12 hidden lg:block border-r border-gray-200 text-start">
       <aside className={sidebar.sidebar} aria-label="Sidebar">
-        <h1 className="text-3xl font-bold ml-1 p-2">Help Center</h1>
+        <h1 className="text-3xl font-bold ml-1 p-2">Help Centre</h1>
 
         <div className="py-4 pr-3">
           <ul className="space-y-2">

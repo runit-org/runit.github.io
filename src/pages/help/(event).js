@@ -19,7 +19,7 @@ export default function Event() {
       <hr />
       <br />
       <b>
-      Below is a list of contents you can jump to:
+      Table of Contents
       </b>
       <ul>
         <li><a href="#Browsing-Events">- Browsing Events</a></li>

@@ -26,6 +26,10 @@ a:hover {
   box-sizing: border-box;
 }
 
+.anchor {
+  scroll-margin-top: 100px;
+}
+
 h1 {
   @extend %title;
   @include font(1.875rem !important, 600, 2.25rem, -0.025rem);
@@ -33,6 +37,14 @@ h1 {
 h2 {
   @extend %title;
   @include font(1.875rem, 600, 2.5rem, -0.035rem);
+}
+h3 {
+  @extend %title;
+  @include font(1.375rem, 600, 2.5rem, -0.035rem);
+}
+.subtitle {
+  color: rgb(107 114 128);
+  @include font(1.2rem, normal, inherit, normal);
 }
 
 img {

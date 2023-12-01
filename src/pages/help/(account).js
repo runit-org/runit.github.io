@@ -4,6 +4,7 @@ import runitProfileView from "../../assets/runit-profile-view.png";
 import runitCalendar from "../../assets/runit-calendar.png";
 import runitStarredList from "../../assets/runit-starred-list.png";
 import runitGivingStar from "../../assets/runit-giving-star.png";
+import runitSendFeedback from "../../assets/runit-send-feedback.png";
 
 export default function Account() {
   return (
@@ -77,6 +78,23 @@ export default function Account() {
         <Image
           priority={true}
           src={runitGivingStar}
+          alt="runit collab gif"
+          className="w-1/2"
+        />
+      </p>
+      <br />
+      <p id="Sending Feedback">
+        <b>
+          Sending Feedback
+        </b>
+        <br />
+        Share your feedback about the app on the Feedback & Support tab. 
+        Here, options include support or feedback, along with selecting a category. 
+        If something breaks or doesn't work, choose support and specify the bug's category. 
+        If you have improvement ideas or believe something can be done better, select feedback and specify the category where we can improve.
+        <Image
+          priority={true}
+          src={runitSendFeedback}
           alt="runit collab gif"
           className="w-1/2"
         />

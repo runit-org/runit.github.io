@@ -132,11 +132,47 @@ export const SidebarNavs = () => {
     {
       path: "account",
       title: "Account",
+      subNav: [
+        {
+          path: "account#Profile",
+          title: "Profile",
+        },
+        {
+          path: "account#Calendar",
+          title: "Calendar",
+        },
+        {
+          path: "account#View-List-of-Starred-Users",
+          title: "View List of Starred Users",
+        },
+        {
+          path: "account#Giving-Stars",
+          title: "Giving Stars",
+        },
+        {
+          path: "account#Sending-Feedback",
+          title: "Sending Feedback",
+        },
+      ],
       // icons: <span className="font-semibold text-gray-500">AU</span>,
     },
     {
       path: "security",
       title: "Security",
+      subNav: [
+        {
+          path: "security#Change-Password",
+          title: "Change Password",
+        },
+        {
+          path: "security#Unverified-Account-Restricted-Access",
+          title: "Unverified Account Restricted Access",
+        },
+        {
+          path: "security#Verifying-Account",
+          title: "Verifying Account",
+        },
+      ],
       // icons: <span className="font-semibold text-gray-500">AU</span>,
     },
   ];

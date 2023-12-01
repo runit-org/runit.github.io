@@ -10,24 +10,12 @@ export default function Security() {
   return (
     //add title and children (modifiable)
     <HelpContainer title={"Security"}>
-      <hr />
-      <br />
-      <b>
-      Table of Contents
-      </b>
-      <ul>
-        <li><a href="#Change-Password">- Change Password</a></li>
-        <li><a href="#Unverified-Account-Restricted-Access">- Unverified Account Restricted Access</a></li>
-        <li><a href="#Verifying-Account">- Verifying Account</a></li>
-      </ul>
-      <br />
       <p id="Change-Password">
-        <b>
-          Change Password
-        </b>
+        <b>Change Password</b>
         <br />
-        To change your password, navigate to the Security Settings tab under your profile page. 
-        Here, provide your current password and confirm your new password.
+        To change your password, navigate to the Security Settings tab under
+        your profile page. Here, provide your current password and confirm your
+        new password.
         <Image
           priority={true}
           src={runitChangePassword}
@@ -37,13 +25,13 @@ export default function Security() {
       </p>
       <br />
       <p id="Unverified-Account-Restricted-Access">
-        <b>
-          Unverified Account Restricted Access
-        </b>
+        <b>Unverified Account Restricted Access</b>
         <br />
-        After registration, you'll initially be an unverified user until you've confirmed your email address. 
-        As an unverified account, you'll notice the 'Verify your account' box on the main homepage and your profile page. 
-        Access to certain features, like the 'Create Event' box, is restricted, and you won't be able to request to join events.
+        After registration, you'll initially be an unverified user until you've
+        confirmed your email address. As an unverified account, you'll notice
+        the 'Verify your account' box on the main homepage and your profile
+        page. Access to certain features, like the 'Create Event' box, is
+        restricted, and you won't be able to request to join events.
         <Image
           priority={true}
           src={runitUnverifiedHomepage}
@@ -53,12 +41,11 @@ export default function Security() {
       </p>
       <br />
       <p id="Verifying-Account">
-        <b>
-          Verifying Account
-        </b>
+        <b>Verifying Account</b>
         <br />
-        To verify your account, click on the 'Verify' button under the 'Verify Account' box. 
-        You'll be redirected to the following page, where you can enter the token sent to your email. 
+        To verify your account, click on the 'Verify' button under the 'Verify
+        Account' box. You'll be redirected to the following page, where you can
+        enter the token sent to your email.
         <Image
           priority={true}
           src={runitVerifyAccountToken}
@@ -72,7 +59,8 @@ export default function Security() {
           alt="runit collab gif"
           className="w-1/2"
         />
-        Once you've completed that, your email will be verified, granting you full access to the application.
+        Once you've completed that, your email will be verified, granting you
+        full access to the application.
         <Image
           priority={true}
           src={runitEmailVerified}

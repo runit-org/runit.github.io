@@ -10,7 +10,10 @@ export default function SideNav() {
   const sidebarNavs = SidebarNavs();
 
   const style =
-    "ml-2 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 transition-all";
+    "ml-2 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition-all";
+
+  const style2 =
+    " flex items-center text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 transition-all";
 
   return (
     <div className="w-2/12 hidden lg:block border-r border-gray-200 text-start">
@@ -22,7 +25,14 @@ export default function SideNav() {
               <Sidebar.Items key={index}>
                 <Sidebar.ItemGroup>
                   {item.subNav ? (
-                    <Sidebar.Collapse label={item.title}>
+                    <Sidebar.Collapse
+                      label={item.title}
+                      className={
+                        slug === item.path
+                          ? `${style2} bg-gray-100 font-semibold text-primary `
+                          : `${style2} `
+                      }
+                    >
                       {item.subNav.map((subnav, j) => {
                         return (
                           <Link
@@ -31,7 +41,7 @@ export default function SideNav() {
                             as={`/help/${subnav.path}`}
                             className={
                               router.asPath === `/help/${subnav.path}`
-                                ? `${style} bg-gray-100 font-semibold text-primary !pl-10 p-1`
+                                ? `${style}  font-semibold text-primary !pl-10 p-1`
                                 : `${style} !pl-10 p-1`
                             }
                           >

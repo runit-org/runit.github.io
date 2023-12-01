@@ -12,6 +12,17 @@ export default function Account() {
     <HelpContainer title={"Account"}>
       <hr />
       <br />
+      <b>
+      Table of Contents
+      </b>
+      <ul>
+        <li><a href="#Profile">- Profile</a></li>
+        <li><a href="#Calendar">- Calendar</a></li>
+        <li><a href="#View-List-of-Starred-Users">- View List of Starred Users</a></li>
+        <li><a href="#Giving-Stars">- Giving Stars</a></li>
+        <li><a href="#Sending-Feedback">- Sending Feedback</a></li>
+      </ul>
+      <br />
       <p id="Profile">
         <b>
           Profile
@@ -50,7 +61,7 @@ export default function Account() {
         />
       </p>
       <br />
-      <p id="View List of Starred Users">
+      <p id="View-List-of-Starred-Users">
         <b>
           View List of Starred Users
         </b>
@@ -67,7 +78,7 @@ export default function Account() {
         />
       </p>
       <br />
-      <p id="Giving Stars">
+      <p id="Giving-Stars">
         <b>
           Giving Stars
         </b>
@@ -83,7 +94,7 @@ export default function Account() {
         />
       </p>
       <br />
-      <p id="Sending Feedback">
+      <p id="Sending-Feedback">
         <b>
           Sending Feedback
         </b>

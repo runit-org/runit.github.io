@@ -2,6 +2,7 @@ import { SidebarNavs } from "@/utilities/navigations";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import sidebar from "@/styles/Home.module.scss";
+import { Sidebar } from "flowbite-react";
 
 export default function SideNav() {
   const router = useRouter();
@@ -15,28 +16,47 @@ export default function SideNav() {
     <div className="w-2/12 hidden lg:block border-r border-gray-200 text-start">
       <aside className={sidebar.sidebar} aria-label="Sidebar">
         <h1 className="text-3xl font-bold ml-1 p-2">Help Centre</h1>
-
-        <div className="py-4 pr-3">
-          <ul className="space-y-2">
-            {sidebarNavs.map((item, index) => {
-              return (
-                <li key={index}>
-                  <Link href="/help/[slug]" as={`/help/${item.name}`}>
-                    <span
+        <Sidebar>
+          {sidebarNavs.map((item, index) => {
+            return (
+              <Sidebar.Items key={index}>
+                <Sidebar.ItemGroup>
+                  {item.subNav ? (
+                    <Sidebar.Collapse label={item.title}>
+                      {item.subNav.map((subnav, j) => {
+                        return (
+                          <Link
+                            key={j}
+                            href="/help/[slug]"
+                            as={`/help/${subnav.path}`}
+                            className={
+                              router.asPath === `/help/${subnav.path}`
+                                ? `${style} bg-gray-100 font-semibold text-primary !pl-10 p-1`
+                                : `${style} !pl-10 p-1`
+                            }
+                          >
+                            {subnav.title}
+                          </Link>
+                        );
+                      })}
+                    </Sidebar.Collapse>
+                  ) : (
+                    <Sidebar.Item
                       className={
-                        slug === item.name
+                        slug === item.path
                           ? `${style} bg-gray-100 font-semibold text-primary`
                           : style
                       }
+                      href={`/help/${item.path}`}
                     >
                       {item.title}
-                    </span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+                    </Sidebar.Item>
+                  )}
+                </Sidebar.ItemGroup>
+              </Sidebar.Items>
+            );
+          })}
+        </Sidebar>
       </aside>
     </div>
   );

@@ -87,19 +87,57 @@ export const FooterItems = () => {
 export const SidebarNavs = () => {
   const sidebarNavs = [
     {
-      name: "event",
-      title: "Event",
-      icons: <span className="font-semibold text-gray-500">AU</span>,
+      path: "event",
+      title: "Events",
+      // icons: <span className="font-semibold text-gray-500">AU</span>,
+      subNav: [
+        {
+          path: "event#Browsing-Events",
+          title: "Browsing Events",
+        },
+        {
+          path: "event#Event-Suggestions",
+          title: "Event Suggestions",
+        },
+        {
+          path: "event#Creating-An-Event",
+          title: "Creating An Event",
+        },
+        {
+          path: "event#Joining-An-Event",
+          title: "Joining An Event",
+        },
+        {
+          path: "event#Event-Page",
+          title: "Event Page",
+        },
+        {
+          path: "event#Writing-Comments",
+          title: "Writing Comments",
+        },
+        {
+          path: "event#Viewing-Members",
+          title: "Viewing Members",
+        },
+        {
+          path: "event#Managing-Applicants",
+          title: "Managing Applicants",
+        },
+        {
+          path: "event#Notifications",
+          title: "Notifications",
+        },
+      ],
     },
     {
-      name: "account",
+      path: "account",
       title: "Account",
-      icons: <span className="font-semibold text-gray-500">AU</span>,
+      // icons: <span className="font-semibold text-gray-500">AU</span>,
     },
     {
-      name: "security",
+      path: "security",
       title: "Security",
-      icons: <span className="font-semibold text-gray-500">AU</span>,
+      // icons: <span className="font-semibold text-gray-500">AU</span>,
     },
   ];
 

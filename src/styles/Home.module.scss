@@ -40,3 +40,18 @@
   padding: 0 2rem;
   height: 100%;
 }
+
+.sidebar nav div {
+  background-color: transparent;
+  padding: 0 0.75rem 0 0;
+}
+
+.sidebar div[data-testid="flowbite-sidebar-items"] {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.sidebar li a {
+  margin-left: 0;
+}

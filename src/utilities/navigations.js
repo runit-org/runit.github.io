@@ -139,7 +139,7 @@ export const SidebarNavs = () => {
         },
         {
           path: "account#View-List-of-Starred-Users",
-          title: "View List of Starred Users",
+          title: "Starred Users",
         },
         {
           path: "account#Giving-Stars",
@@ -162,11 +162,11 @@ export const SidebarNavs = () => {
         },
         {
           path: "security#Unverified-Account-Restricted-Access",
-          title: "Unverified Account Restricted Access",
+          title: "Unverified Accounts",
         },
         {
           path: "security#Verifying-Account",
-          title: "Verifying Account",
+          title: "Verifying Accounts",
         },
       ],
       // icons: <span className="font-semibold text-gray-500">AU</span>,

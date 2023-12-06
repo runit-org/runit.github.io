@@ -36,14 +36,13 @@ export default function SiteFooter() {
           </div>
           <div className="copyright_wrapperw-full py-6 px-4 mt-5 sm:flex sm:items-center sm:justify-between">
             <div className="text-gray-500 text-sm">
-              <span>All contents &#64; 2023</span>
+              <span>All contents &#64; 2023</span>{" "}
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                className="text-primary"
+                className="!text-primary"
               >
-                {" "}
                 runit
               </a>
               <span> All rights reserved.</span>

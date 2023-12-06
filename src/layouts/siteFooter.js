@@ -9,7 +9,7 @@ export default function SiteFooter() {
       <Footer bgDark={true}>
         <div className="w-full container">
           <div className="w-full py-6 px-4 sm:flex sm:items-center sm:justify-between">
-            <Footer.Brand href="/" src="runit.png" alt="runit Logo" />
+            <Footer.Brand href="/" src="/runit.png" alt="runit Logo" />
           </div>
 
           <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-8 px-6">

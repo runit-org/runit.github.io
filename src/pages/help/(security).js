@@ -10,7 +10,13 @@ export default function Security() {
   return (
     //add title and children (modifiable)
     <HelpContainer title={"Security"}>
-      <h4 className="subtitle">Add some brief there about events</h4>
+      <h4 className="subtitle">
+        The Security section is dedicated to ensuring the safety and integrity of 
+        your user account. Explore features that empower you to manage your account's 
+        security settings, change passwords, and provide valuable feedback for continuous 
+        improvement. Learn about the verification process and essential actions you can 
+        take to safeguard your experience within the application.
+      </h4>
       <div className="container mt-2">
         <div id="Change-Password" className="anchor">
           <h3 className="mb-0">Change Password</h3>

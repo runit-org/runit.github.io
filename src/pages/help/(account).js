@@ -10,7 +10,13 @@ export default function Account() {
   return (
     //add title and children (modifiable)
     <HelpContainer title={"Account"}>
-      <h4 className="subtitle">Add some brief there about events</h4>
+      <h4 className="subtitle">
+        The Accounts section is your gateway to managing and personalizing your user 
+        profile within the application. Explore the essential features that empower you 
+        to control your account settings, enhance security, and connect with other users. 
+        Whether you're updating your profile details, starring users, or changing your password, 
+        this section provides a comprehensive guide to optimizing your user experience.
+      </h4>
       <div className="container mt-2">
         <div id="Profile" className="anchor">
           <h3 className="mb-0">Profile</h3>

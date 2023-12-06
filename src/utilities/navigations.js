@@ -29,10 +29,6 @@ export const NavigationObj = () => {
         },
       ],
     },
-    {
-      name: "Contact",
-      href: "#",
-    },
   ];
 
   return headerItems;
@@ -45,7 +41,7 @@ export const FooterItems = () => {
       contents: [
         {
           name: "runit",
-          href: `#`,
+          href: `http://170.64.220.126:3000/signup`,
         },
         {
           name: "runit.github.io",
@@ -54,28 +50,28 @@ export const FooterItems = () => {
       ],
     },
     {
-      title: "More Resocures",
+      title: "Contact Julian",
       contents: [
         {
-          name: "Privacy Policy",
-          href: `#`,
+          name: "Github",
+          href: "https://github.com/juliantjg",
         },
         {
-          name: "Terms & Conditions",
-          href: `#`,
+          name: "Email",
+          href: `mailto:juliantj88@gmail.com`,
         },
       ],
     },
     {
-      title: "Contact Us",
+      title: "Contact Manan",
       contents: [
         {
           name: "Github",
-          href: "#",
+          href: "https://github.com/mananlodhia1",
         },
         {
           name: "Email",
-          href: `#`,
+          href: `mailto:mananlodhia@hotmail.com`,
         },
       ],
     },

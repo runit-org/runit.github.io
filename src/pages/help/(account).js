@@ -29,7 +29,7 @@ export default function Account() {
             priority={true}
             src={runitProfileView}
             alt="runit collab gif"
-            className="w-1/2 my-8"
+            className="w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -46,7 +46,7 @@ export default function Account() {
             priority={true}
             src={runitCalendar}
             alt="runit collab gif"
-            className="w-1/2 my-8"
+            className="w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -62,7 +62,7 @@ export default function Account() {
             priority={true}
             src={runitStarredList}
             alt="runit collab gif"
-            className="w-1/2 my-8"
+            className="w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -77,7 +77,7 @@ export default function Account() {
             priority={true}
             src={runitGivingStar}
             alt="runit collab gif"
-            className="w-1/2 my-8"
+            className="w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -95,7 +95,7 @@ export default function Account() {
             priority={true}
             src={runitSendFeedback}
             alt="runit collab gif"
-            className="w-1/2 my-8"
+            className="w-1/2 my-8 rounded-xl"
           />
         </div>
       </div>

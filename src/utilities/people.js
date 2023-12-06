@@ -24,6 +24,11 @@ export const People = () => {
           link: "https://github.com/juliantjg",
           // content: "3 minute",
         },
+        {
+          title: "Email",
+          link: "mailto:juliantj88@gmail.com",
+          // content: "3 minute",
+        },
       ],
     },
     {
@@ -46,6 +51,11 @@ export const People = () => {
         {
           title: "Github",
           link: "https://github.com/mananlodhia1",
+          // content: "3 minute",
+        },
+        {
+          title: "Email",
+          link: "mailto:mananlodhia@hotmail.com",
           // content: "3 minute",
         },
       ],

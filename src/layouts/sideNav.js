@@ -16,8 +16,11 @@ export default function SideNav() {
     " flex items-center text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 transition-all";
 
   return (
-    <div className="w-2/12 hidden lg:block border-r border-gray-200 text-start">
-      <aside className={sidebar.sidebar} aria-label="Sidebar">
+    <div className="w-3/12 2xl:w-2/12  hidden lg:block border-r border-gray-200 text-start">
+      <aside
+        className={`${sidebar.sidebar} !overflow-x-hidden`}
+        aria-label="Sidebar"
+      >
         <h1 className="text-3xl font-bold ml-1 p-2">Help Centre</h1>
         <Sidebar>
           {sidebarNavs.map((item, index) => {

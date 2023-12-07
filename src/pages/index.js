@@ -96,7 +96,7 @@ export default function Home() {
       />
       {/* (modifiable) */}
       <Section cols={2} id="about">
-        <div className="order-last text-start">
+        <div className="lg:order-last text-start">
           <h2 className="sm:text-5xl">Events</h2>
           <p>
             Customize your experience by creating events tailored to your
@@ -112,7 +112,7 @@ export default function Home() {
             priority={true}
             src={eventGif}
             alt="runit events gif"
-            className="rounded-xl drop-shadow-2xl"
+            className="rounded-xl sm:drop-shadow-2xl mt-8 lg:mt-0"
           />
         </div>
       </Section>
@@ -136,13 +136,13 @@ export default function Home() {
             priority={true}
             src={collabGif}
             alt="runit collab gif"
-            className="rounded-xl drop-shadow-2xl"
+            className="rounded-xl sm:drop-shadow-2xl mt-8 lg:mt-0"
           />
         </div>
       </Section>
       {/* (modifiable) */}
       <Section cols={2}>
-        <div className="order-last  text-start">
+        <div className="lg:order-last  text-start">
           <h2 className="sm:text-5xl">Security & Profile</h2>
           <p>
             Explore a variety of tabs for a personalized experience. Review your
@@ -161,7 +161,7 @@ export default function Home() {
             priority={true}
             src={profileGif}
             alt="runit profile gif"
-            className="rounded-xl drop-shadow-2xl"
+            className="rounded-xl sm:drop-shadow-2xl mt-8 lg:mt-0"
           />
         </div>
       </Section>
@@ -186,7 +186,7 @@ export default function Home() {
                 to them. Your input is valuable in shaping the future of runit!
               </p>
 
-              <div className="md:flex py-2 lg:py-4 gap-4 hidden">
+              <div className="lg:flex py-2 lg:py-4 gap-4 hidden">
                 {sliderControls}
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function Home() {
                 return (
                   <div
                     key={index}
-                    className="keen-slider__slide text-start flex justify-center"
+                    className="keen-slider__slide text-start flex justify-center mt-8 lg:mt-0"
                   >
                     <UserCard
                       userName={item.userName}
@@ -208,7 +208,7 @@ export default function Home() {
                 );
               })}
             </div>
-            <div className="flex py-6 lg:py-4 gap-4 md:hidden justify-center">
+            <div className="flex py-6 lg:py-4 gap-4 lg:hidden justify-center">
               {sliderControls}
             </div>
           </Section>

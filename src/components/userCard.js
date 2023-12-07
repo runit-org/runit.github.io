@@ -12,9 +12,9 @@ export const UserCard = ({
       <div className="sm:flex sm:justify-start sm:gap-4">
         <div className="hidden sm:block sm:shrink-0">{img}</div>
         <div>
-          <h3 className="text-lg font-bold text-gray-900 sm:text-xl">
+          <h4 className="text-lg font-bold text-gray-900 sm:text-xl">
             {userName}
-          </h3>
+          </h4>
 
           <p className="mt-1 text-xs font-medium text-gray-600">{title}</p>
         </div>

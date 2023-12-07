@@ -112,7 +112,7 @@ export default function Home() {
             priority={true}
             src={eventGif}
             alt="runit events gif"
-            className="rounded-xl sm:drop-shadow-2xl mt-8 lg:mt-0"
+            className="rounded-xl sm:drop-shadow-2xl mt-8 lg:mt-10"
           />
         </div>
       </Section>

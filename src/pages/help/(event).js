@@ -16,7 +16,13 @@ export default function Event() {
   return (
     //add title and children (modifiable)
     <HelpContainer title={"Events"}>
-      <h4 className="subtitle">Add some brief there about events</h4>
+      <h4 className="subtitle">
+        Explore the Events section to dive into the heart of collaborative experiences. 
+        Discover the dynamic features that empower you to create, join, and manage events 
+        seamlessly. From crafting personalized events to joining real-time happenings, 
+        this section provides a comprehensive overview of the tools and functionalities 
+        at your disposal.
+      </h4>
       <div className="container mt-2 ">
         <div id="Browsing-Events" className="anchor">
           <h3 className="mb-0">Browsing Events</h3>

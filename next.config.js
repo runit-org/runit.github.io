@@ -4,7 +4,7 @@
  */
 const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
-  assetPrefix: isProd ? "/runit.github.io" : undefined,
+  basePath: isProd ? "/runit.github.io" : "",
   output: "export",
   distDir: "dist",
   images: {

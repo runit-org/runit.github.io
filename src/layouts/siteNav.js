@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button, Dropdown, Navbar } from "flowbite-react";
 import { NavigationObj } from "@/utilities/navigations";
 import { useRouter } from "next/router";
+import { basePath } from "../../next.config";
 
 export default function SiteNavbar() {
   let route = useRouter();
@@ -10,7 +11,11 @@ export default function SiteNavbar() {
     <div className="w-full flex justify-center md:sticky top-0 z-50 max-w-full bg-white">
       <Navbar fluid rounded className="container">
         <Navbar.Brand as={Link} href="/">
-          <img src="/runit.png" className="mr-3 h-6 sm:h-9" alt="runit Logo" />
+          <img
+            src={`${basePath}/runit.png`}
+            className="mr-3 h-6 sm:h-9"
+            alt="runit Logo"
+          />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

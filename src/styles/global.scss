@@ -44,7 +44,7 @@ h3 {
 }
 .subtitle {
   color: rgb(107 114 128);
-  @include font(1.2rem, normal, inherit, normal);
+  @include font(1.2rem, 500, inherit, normal);
 }
 
 img {

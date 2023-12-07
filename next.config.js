@@ -10,6 +10,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/help/:help*",
+        destination: "/help/[slug]",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

@@ -91,8 +91,8 @@ export default function Home() {
             like functionalities.
           </>
         }
-        height={"h-[33rem]"}
-        logoWidth={"w-10/12"}
+        height={"sm:h-[38rem]"}
+        logoWidth={"w-[300px]"}
       />
       {/* (modifiable) */}
       <Section cols={2} id="about">

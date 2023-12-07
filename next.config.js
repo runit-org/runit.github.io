@@ -13,7 +13,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/help/:help*",
+        source: "/help/:slug*",
         destination: "/help/[slug]",
       },
     ];

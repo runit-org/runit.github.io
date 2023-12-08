@@ -37,7 +37,7 @@ export default function Event() {
             priority={true}
             src={runitBrowseEventsPic}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
           Each card includes details like the event creator's username, creation
           timestamp, join status, event title, and a WYSIWYG event description.
@@ -48,7 +48,7 @@ export default function Event() {
             priority={true}
             src={runitEventCardZoomed}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -67,7 +67,7 @@ export default function Event() {
             priority={true}
             src={runitEventSuggestions}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -87,7 +87,7 @@ export default function Event() {
             priority={true}
             src={runitCreateEvent}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -106,7 +106,7 @@ export default function Event() {
             priority={true}
             src={runitJoinEvent}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -123,7 +123,7 @@ export default function Event() {
             priority={true}
             src={runitEventPage}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -142,7 +142,7 @@ export default function Event() {
             priority={true}
             src={runitCommentMention}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
           <p>
             You can also express appreciation by liking comments – simply click
@@ -154,7 +154,7 @@ export default function Event() {
             priority={true}
             src={runitLikeComment}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -171,7 +171,7 @@ export default function Event() {
             priority={true}
             src={runitViewMembers}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -190,7 +190,7 @@ export default function Event() {
             priority={true}
             src={runitManageApplicants}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -206,7 +206,7 @@ export default function Event() {
             priority={true}
             src={runitEventNotifications}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
       </div>

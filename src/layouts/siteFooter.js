@@ -9,7 +9,7 @@ export default function SiteFooter() {
 
       <Footer bgDark={true}>
         <div className="w-full container">
-          <div className="w-full py-6 px-4 sm:flex sm:items-center sm:justify-between">
+          <div className="w-full py-4 px-5 sm:flex sm:items-center sm:justify-between">
             <Footer.Brand
               href="/"
               src={`${basePath}/runit.png`}
@@ -17,11 +17,11 @@ export default function SiteFooter() {
             />
           </div>
 
-          <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-8 px-6">
+          <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-4 px-6 max-w-screen-lg">
             {FooterItems().map((item, index) => {
               return (
                 <div key={index}>
-                  <Footer.Title title={item.title} />
+                  <Footer.Title title={item.title} className="!mb-2" />
                   <Footer.LinkGroup col={true}>
                     {item.contents.map((contents, index2) => {
                       return (
@@ -43,7 +43,7 @@ export default function SiteFooter() {
             <div className="text-gray-500 text-sm">
               <span>All contents &#64; 2023</span>{" "}
               <a
-                href="#"
+                href={basePath}
                 target="_blank"
                 rel="noreferrer"
                 className="!text-primary"

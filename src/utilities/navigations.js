@@ -1,3 +1,5 @@
+import { basePath } from "../../next.config";
+
 export const NavigationObj = () => {
   const headerItems = [
     /*  {
@@ -45,7 +47,7 @@ export const FooterItems = () => {
         },
         {
           name: "runit.github.io",
-          href: `/`,
+          href: basePath,
         },
       ],
     },

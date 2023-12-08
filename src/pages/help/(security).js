@@ -30,7 +30,7 @@ export default function Security() {
             priority={true}
             src={runitChangePassword}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -48,7 +48,7 @@ export default function Security() {
             priority={true}
             src={runitUnverifiedHomepage}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
 
@@ -63,14 +63,14 @@ export default function Security() {
             priority={true}
             src={runitVerifyAccountToken}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
           <p>The email sent to you will look something like this:</p>
           <Image
             priority={true}
             src={runitConfirmationEmail}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
           <p>
             Once you've completed that, your email will be verified, granting
@@ -80,7 +80,7 @@ export default function Security() {
             priority={true}
             src={runitEmailVerified}
             alt="runit collab gif"
-            className="w-1/2 my-8 rounded-xl"
+            className="w-full lg:w-1/2 my-8 rounded-xl"
           />
         </div>
       </div>

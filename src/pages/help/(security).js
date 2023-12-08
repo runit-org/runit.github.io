@@ -5,6 +5,7 @@ import runitUnverifiedHomepage from "../../assets/runit-unverified-homepage.png"
 import runitVerifyAccountToken from "../../assets/runit-verify-account-token.png";
 import runitConfirmationEmail from "../../assets/runit-confirmation-email.png";
 import runitEmailVerified from "../../assets/runit-email-verified.png";
+import { CustomImg } from "@/components/customImg";
 
 export default function Security() {
   return (
@@ -26,12 +27,7 @@ export default function Security() {
             your profile page. Here, provide your current password and confirm
             your new password.
           </p>
-          <Image
-            priority={true}
-            src={runitChangePassword}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitChangePassword} alt="runit collab gif" />
         </div>
 
         <div id="Unverified-Account-Restricted-Access" className="anchor">
@@ -44,12 +40,7 @@ export default function Security() {
             Event' box, is restricted, and you won't be able to request to join
             events.
           </p>
-          <Image
-            priority={true}
-            src={runitUnverifiedHomepage}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitUnverifiedHomepage} alt="runit collab gif" />
         </div>
 
         <div id="Verifying-Account" className="anchor">
@@ -59,12 +50,7 @@ export default function Security() {
             'Verify Account' box. You'll be redirected to the following page,
             where you can enter the token sent to your email.
           </p>
-          <Image
-            priority={true}
-            src={runitVerifyAccountToken}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitVerifyAccountToken} alt="runit collab gif" />
           <p>The email sent to you will look something like this:</p>
           <Image
             priority={true}
@@ -76,12 +62,7 @@ export default function Security() {
             Once you've completed that, your email will be verified, granting
             you full access to the application.
           </p>
-          <Image
-            priority={true}
-            src={runitEmailVerified}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitEmailVerified} alt="runit collab gif" />
         </div>
       </div>
     </HelpContainer>

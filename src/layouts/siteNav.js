@@ -44,7 +44,7 @@ export default function SiteNavbar() {
             );
           })}
           <Button
-            className="btn-primary"
+            className="btn-primary mt-5 md:mt-0"
             as={Link}
             href="http://170.64.220.126:3000/signup"
             target="_blank"

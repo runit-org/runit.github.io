@@ -11,6 +11,7 @@ import runitLikeComment from "../../assets/runit-like-comment.png";
 import runitViewMembers from "../../assets/runit-view-members.png";
 import runitManageApplicants from "../../assets/runit-manage-applicants.png";
 import runitEventNotifications from "../../assets/runit-event-notifications.png";
+import { CustomImg } from "@/components/customImg";
 
 export default function Event() {
   return (
@@ -33,23 +34,13 @@ export default function Event() {
             'show more' button which is a type of loading feature we implemented
             for more efficient rendering.
           </p>
-          <Image
-            priority={true}
-            src={runitBrowseEventsPic}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitBrowseEventsPic} alt="runit collab gif" />
           Each card includes details like the event creator's username, creation
           timestamp, join status, event title, and a WYSIWYG event description.
           Keep an eye on event statuses—pending, underway, ended, or canceled.
           To delve into detailed event information, click the 'Details' button
           for an in-depth technical overview.
-          <Image
-            priority={true}
-            src={runitEventCardZoomed}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitEventCardZoomed} alt="runit collab gif" />
         </div>
 
         <div id="Event-Suggestions" className="anchor">
@@ -62,13 +53,7 @@ export default function Event() {
             details such as a link, time, and more, enabling you to efficiently
             use this information for your event.
           </p>
-
-          <Image
-            priority={true}
-            src={runitEventSuggestions}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitEventSuggestions} alt="runit collab gif" />
         </div>
 
         <div id="Creating-An-Event" className="anchor">
@@ -82,13 +67,7 @@ export default function Event() {
             the content to your preferences. Your event creation experience,
             simplified and customizable, starts here.
           </p>
-
-          <Image
-            priority={true}
-            src={runitCreateEvent}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitCreateEvent} alt="runit collab gif" />
         </div>
 
         <div id="Joining-An-Event" className="anchor">
@@ -101,13 +80,7 @@ export default function Event() {
             status on each event will be displayed on the join button once
             you've become involved.
           </p>
-
-          <Image
-            priority={true}
-            src={runitJoinEvent}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitJoinEvent} alt="runit collab gif" />
         </div>
 
         <div id="Event-Page" className="anchor">
@@ -119,12 +92,7 @@ export default function Event() {
             you're the event creator, you have the authority to accept or
             decline participation requests right here.
           </p>
-          <Image
-            priority={true}
-            src={runitEventPage}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitEventPage} alt="runit collab gif" />
         </div>
 
         <div id="Writing-Comments" className="anchor">
@@ -138,24 +106,13 @@ export default function Event() {
             tagged, the target user will be notified of your message. Notify
             everyone by using @everyone.
           </p>
-          <Image
-            priority={true}
-            src={runitCommentMention}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitCommentMention} alt="runit collab gif" />
           <p>
             You can also express appreciation by liking comments – simply click
             the heart symbol under the comment, and the user will be notified if
             someone likes their contribution.
           </p>
-
-          <Image
-            priority={true}
-            src={runitLikeComment}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitLikeComment} alt="runit collab gif" />
         </div>
 
         <div id="Viewing-Members" className="anchor">
@@ -167,12 +124,7 @@ export default function Event() {
             From here, you can conveniently navigate to their profiles for
             further details.
           </p>
-          <Image
-            priority={true}
-            src={runitViewMembers}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitViewMembers} alt="runit collab gif" />
         </div>
 
         <div id="Managing-Applicants" className="anchor">
@@ -186,12 +138,7 @@ export default function Event() {
             applicant, you grant them the ability to create comments under your
             event, facilitating their active participation.
           </p>
-          <Image
-            priority={true}
-            src={runitManageApplicants}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitManageApplicants} alt="runit collab gif" />
         </div>
 
         <div id="Notifications" className="anchor">
@@ -202,12 +149,7 @@ export default function Event() {
             events, and the creation of comments. Access these notifications
             conveniently located at the top right of your navigation bar.
           </p>
-          <Image
-            priority={true}
-            src={runitEventNotifications}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitEventNotifications} alt="runit collab gif" />
         </div>
       </div>
     </HelpContainer>

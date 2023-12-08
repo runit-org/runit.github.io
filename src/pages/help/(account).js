@@ -5,6 +5,7 @@ import runitCalendar from "../../assets/runit-calendar.png";
 import runitStarredList from "../../assets/runit-starred-list.png";
 import runitGivingStar from "../../assets/runit-giving-star.png";
 import runitSendFeedback from "../../assets/runit-send-feedback.png";
+import { CustomImg } from "@/components/customImg";
 
 export default function Account() {
   return (
@@ -32,12 +33,7 @@ export default function Account() {
             viewing another user's profile, private activities such as event
             join requests, etc., won't be shown.
           </p>
-          <Image
-            priority={true}
-            src={runitProfileView}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitProfileView} alt="runit collab gif" />
         </div>
 
         <div id="Calendar" className="anchor">
@@ -49,12 +45,7 @@ export default function Account() {
             under the date, making it easier for you to navigate. You can go to
             the event page from here as well.
           </p>
-          <Image
-            priority={true}
-            src={runitCalendar}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitCalendar} alt="runit collab gif" />
         </div>
 
         <div id="View-List-of-Starred-Users" className="anchor">
@@ -65,12 +56,7 @@ export default function Account() {
             for better rendering. You can also unstar users directly from this
             tab.
           </p>
-          <Image
-            priority={true}
-            src={runitStarredList}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitStarredList} alt="runit collab gif" />
         </div>
 
         <div id="Giving-Stars" className="anchor">
@@ -80,12 +66,7 @@ export default function Account() {
             click the star button, or go to their profile and give them a star
             on the top right corner of the user card.
           </p>
-          <Image
-            priority={true}
-            src={runitGivingStar}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitGivingStar} alt="runit collab gif" />
         </div>
 
         <div id="Sending-Feedback" className="anchor">
@@ -98,12 +79,7 @@ export default function Account() {
             something can be done better, select feedback and specify the
             category where we can improve.
           </p>
-          <Image
-            priority={true}
-            src={runitSendFeedback}
-            alt="runit collab gif"
-            className="w-full lg:w-1/2 my-8 rounded-xl"
-          />
+          <CustomImg path={runitSendFeedback} alt="runit collab gif" />
         </div>
       </div>
     </HelpContainer>

@@ -8,9 +8,34 @@ import Event from "./(event)";
 import Account from "./(account)";
 import Security from "./(security)";
 
-export default function Help() {
+export async function getStaticPaths() {
+  // Define the possible slugs
+  const paths = [
+    { params: { slug: "event" } },
+    { params: { slug: "account" } },
+    { params: { slug: "security" } },
+    // Add more params as needed
+  ];
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+
+  return {
+    props: {
+      slug,
+    },
+  };
+}
+
+export default function Help({ slug }) {
   const router = useRouter();
-  const { slug } = router.query;
+  // const { slug } = router.query;
 
   //render components based on the slug/route
   const getPostComponent = (slug) => {

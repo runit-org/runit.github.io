@@ -2,17 +2,13 @@ import { basePath } from "../../next.config";
 
 export const NavigationObj = () => {
   const headerItems = [
-    /*  {
-      name: "Home",
-      href: "/",
-    }, */
     {
       name: "About",
-      href: "/#about",
+      href: `${basePath}/#about`,
     },
     {
       name: "People",
-      href: "/#people",
+      href: `${basePath}/#people`,
     },
     {
       name: "Help",

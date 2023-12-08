@@ -3,10 +3,10 @@ import SiteFooter from "@/layouts/siteFooter";
 import SiteNavbar from "@/layouts/siteNav";
 import style from "@/styles/Home.module.scss";
 import SideNav from "@/layouts/sideNav";
-import { useRouter } from "next/router";
 import Event from "./(event)";
 import Account from "./(account)";
 import Security from "./(security)";
+import { basePath } from "../../../next.config";
 
 export async function getStaticPaths() {
   // Define the possible slugs
@@ -34,9 +34,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Help({ slug }) {
-  const router = useRouter();
-  // const { slug } = router.query;
-
   //render components based on the slug/route
   const getPostComponent = (slug) => {
     switch (slug) {
@@ -54,8 +51,21 @@ export default function Help({ slug }) {
   return (
     <div>
       <Head>
-        <title>runit Help - {slug} </title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>runit Help - {slug}</title>
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
+        <meta name="theme-color" content="#6366f1" />
+        <meta name="runit" content="runit Help Centre" />
+        <meta
+          property="og:title"
+          content={`runit Help - ${slug} `}
+          key="title"
+        />
+        <meta
+          property="og:description"
+          content="runit Help Centre"
+          key="description"
+        />
+        <link rel="apple-touch-icon" href={`${basePath}/favicon.ico`} />
       </Head>
       <SiteNavbar />
       <div

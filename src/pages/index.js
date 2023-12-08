@@ -10,6 +10,7 @@ import Image from "next/image";
 import eventGif from "../assets/runit-events.gif";
 import collabGif from "../assets/runit-collaborations.gif";
 import profileGif from "../assets/runit-profile.gif";
+import { basePath } from "../../next.config";
 
 export default function Home() {
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -78,7 +79,16 @@ export default function Home() {
     <div>
       <Head>
         <title>runit</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
+        <meta name="theme-color" content="#6366f1" />
+        <meta name="runit" content="The event match making app" />
+        <meta property="og:title" content="runit" key="title" />
+        <meta
+          property="og:description"
+          content="The event match making app"
+          key="description"
+        />
+        <link rel="apple-touch-icon" href={`${basePath}/favicon.ico`} />
       </Head>
       <SiteNavbar />
       {/* (modifiable) */}

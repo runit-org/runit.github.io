@@ -1,6 +1,7 @@
 import { FooterItems } from "@/utilities/navigations";
 import { Footer } from "flowbite-react";
 import { basePath } from "../../next.config";
+import packageJson from "../../package.json";
 
 export default function SiteFooter() {
   return (
@@ -41,7 +42,7 @@ export default function SiteFooter() {
           </div>
           <div className="copyright_wrapperw-full py-6 px-4 mt-5 sm:flex sm:items-center sm:justify-between">
             <div className="text-gray-500 text-sm">
-              <span>All contents &#64; 2023</span>{" "}
+              <span>All contents &#64; {new Date().getFullYear()}</span>{" "}
               <a
                 href={basePath}
                 target="_blank"
@@ -52,6 +53,9 @@ export default function SiteFooter() {
               </a>
               <span> All rights reserved.</span>
             </div>
+            <span className="text-gray-500 text-sm">
+              v{packageJson.version}
+            </span>
           </div>
         </div>
       </Footer>

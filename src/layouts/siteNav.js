@@ -46,10 +46,10 @@ export default function SiteNavbar() {
           <Button
             className="btn-primary mt-5 md:mt-0"
             as={Link}
-            href="http://170.64.220.126:3000/signup"
+            href="http://170.64.220.126:3000/"
             target="_blank"
           >
-            Sign up
+            Sign In
           </Button>
         </Navbar.Collapse>
       </Navbar>

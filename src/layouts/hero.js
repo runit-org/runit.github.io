@@ -1,6 +1,8 @@
 import Image from "next/image";
 import heroImage from "../assets/hero3.jpg";
 import { useEffect, useState } from "react";
+import { Button } from "flowbite-react";
+import Link from "next/link";
 
 export const Hero = (props) => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,6 +38,14 @@ export const Hero = (props) => {
               {props.title}
             </h2>
             <p className="block">{props.desc}</p>
+            <Button
+              className="btn-primary mt-5 md:mt-0 max-w-[10rem]"
+              as={Link}
+              href="http://170.64.220.126:3000/test-account"
+              target="_blank"
+            >
+              Live Preview
+            </Button>
           </div>
           <div className="hidden justify-center mt-8 sm:flex lg:mt-0 w-full sm:w-1/2 lg:flex-shrink-0">
             <div className="relative">
